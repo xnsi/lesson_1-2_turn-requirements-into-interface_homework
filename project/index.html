@@ -5,15 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Учебный проект по техническому заданию"
+      content="История о том, как базовый Git удалось освоить за неделю и понять его роль в разработке"
     />
-    <title>Учебный проект</title>
+    <title>John Doe · Git за неделю</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <main>
-      <h1>Учебный проект</h1>
-      <p>Стартовая версия страницы.</p>
+    <header class="site-header container">
+      <a class="site-header__brand" href="#top">John Doe · Git за неделю</a>
+      <nav class="site-header__nav" aria-label="Навигация по истории">
+        <a href="#story">История</a>
+        <a href="#features">Что я оценил</a>
+        <a href="#next">Что дальше</a>
+      </nav>
+    </header>
+
+    <main id="top" class="container page">
+      <section class="story-b block" aria-labelledby="hero-title">
+        <div class="story-b__meta">
+          <img
+            src="profile.webp"
+            alt="Разработчик перед монитором с несколькими версиями проекта"
+            width="216"
+          />
+          <strong>John Doe</strong>
+          <span>(до изучения Git)</span>
+        </div>
+        <div class="story-b__body">
+          <h1 id="hero-title" class="story-b__lead">Git за неделю</h1>
+          <dl>
+            <div>
+              <dt>До курса</dt>
+              <dd>Git был заметным пробелом в моих навыках разработчика.</dd>
+            </div>
+            <div>
+              <dt>Решение</dt>
+              <dd>Я записался на недельный летний мини-курс по Git в вузе.</dd>
+            </div>
+            <div>
+              <dt>Результат</dt>
+              <dd>Я освоил базовый Git и понял, почему он стал стандартным инструментом разработки.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="story-a block" id="story">
+        <header>
+          <h2>История</h2>
+        </header>
+        <div class="story-a__text">
+          <p>Git всё чаще встречался в учебе, на стажировках и хакатонах. Его знание уже воспринималось как базовый навык, а у меня в этой части был заметный пробел.</p>
+          <p>Когда в вузе появился недельный летний мини-курс по Git, я записался, чтобы наконец разобраться в нём системно.</p>
+          <p>По ходу курса стало понятно, что Git это не просто набор команд. Главное оказалось в том, какие задачи он решает в реальной разработке. Больше всего я оценил три вещи.</p>
+        </div>
+      </section>
+
+      <section class="cards-a block" id="features">
+        <h2 class="cards-a__title">За что я оценил Git</h2>
+        <article>
+          <img src="revert.webp" alt="" class="cards-a__icon" />
+          <h3>Не бояться ошибок</h3>
+          <p>git revert позволяет отменить уже зафиксированное изменение, сохранив историю проекта.</p>
+        </article>
+        <article>
+          <img src="collab.webp" alt="" class="cards-a__icon" />
+          <h3>Работать вместе</h3>
+          <p>Ветки и merge позволяют нескольким разработчикам независимо менять проект и объединять результат.</p>
+        </article>
+        <article>
+          <img src="publish.webp" alt="" class="cards-a__icon" />
+          <h3>Делиться кодом</h3>
+          <p>Удалённые репозитории позволяют публиковать проект, получать чужие изменения и синхронизировать свою работу.</p>
+        </article>
+      </section>
+
+      <section class="reflection block" aria-labelledby="reflection-title">
+        <p class="eyebrow">ИТОГ</p>
+        <h2 id="reflection-title">
+          «Я пришёл разобраться с обязательным инструментом, а в итоге понял, почему Git стал стандартом разработки.»
+        </h2>
+      </section>
+
+      <section id="next" class="next-step block" aria-labelledby="next-title">
+        <div>
+          <p class="eyebrow">Следующий шаг</p>
+          <h2 id="next-title">Если хочется разобраться в Git глубже, я бы начал с Pro Git</h2>
+        </div>
+        <a
+          class="button button--secondary"
+          href="https://git-scm.com/book/en/v2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Открыть Pro Git
+        </a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>История основана на реальных событиях</p>
+        <p>Снигир Михаил · 2026</p>
+      </div>
+    </footer>
   </body>
 </html>
